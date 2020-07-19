@@ -5,6 +5,10 @@ pub mod polyfit_rs {
     type MatrixNN = na::Matrix<f64, na::Dynamic, na::Dynamic, na::VecStorage<f64, na::Dynamic, na::Dynamic>>;
     type ColumnN = na::Matrix<f64, na::Dynamic, na::U1, na::VecStorage<f64, na::Dynamic, na::U1>>;
 
+    /// @param x_values The x-values
+    /// @param y_values The y-values
+    /// @param polynomial_degree The order of the polynomial. I. e. 2 for a parabola.
+    /// @return Order of monomials increases with the vector index
     pub fn polyfit<'a>(x_values : &'a [f64], y_values : &'a [f64], polynomial_degree: usize) -> Vec<f64>
     {
         let number_of_columns = polynomial_degree + 1;

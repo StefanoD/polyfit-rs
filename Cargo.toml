@@ -5,7 +5,7 @@ authors = ["Stefano Di Martino"]
 description = "Polynomial fitting of data like in numpy.polyfit()."
 repository = "https://github.com/StefanoD/polyfit-rs"
 edition = "2018"
-keywords = ["polyfit", "polynomial fitting"]
+keywords = ["algorithms", "mathematics", "science"]
 license = "Apache-2.0"
 readme = "README.md"
 

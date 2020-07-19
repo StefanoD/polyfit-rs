@@ -7,6 +7,7 @@ repository = "https://github.com/StefanoD/polyfit-rs"
 edition = "2018"
 keywords = ["polyfit", "polynomial fitting"]
 license = "Apache-2.0"
+readme = "README.md"
 
 [lib]
 test = true

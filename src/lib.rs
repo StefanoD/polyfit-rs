@@ -3,7 +3,6 @@ extern crate nalgebra as na;
 pub mod polyfit_rs {
     
     type MatrixNN = na::Matrix<f64, na::Dynamic, na::Dynamic, na::VecStorage<f64, na::Dynamic, na::Dynamic>>;
-    type ColumnN = na::Matrix<f64, na::Dynamic, na::U1, na::VecStorage<f64, na::Dynamic, na::U1>>;
 
     /// @param x_values The x-values
     /// @param y_values The y-values
@@ -27,11 +26,7 @@ pub mod polyfit_rs {
             }
         }
 
-        let mut b = ColumnN::zeros(y_values.len());
-        for row in 0..b.len()
-        {
-            b[(row, 0)] = y_values[row];
-        }
+        let b = na::DVector::from_row_slice(y_values);
 
         let decomp = na::SVD::new(a, true, true);
         let x = decomp.solve(&b, 0.000000000000000001).unwrap();

@@ -1,6 +1,6 @@
 [package]
 name = "polyfit-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Stefano Di Martino"]
 description = "Polynomial fitting of data like in numpy.polyfit()."
 repository = "https://github.com/StefanoD/polyfit-rs"

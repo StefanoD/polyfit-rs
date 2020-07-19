@@ -1,0 +1,11 @@
+[package]
+name = "polyfit-rs"
+version = "0.1.0"
+authors = ["Stefano Di Martino"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nalgebra = "0.20"
+nalgebra-lapack = "0.13.0"

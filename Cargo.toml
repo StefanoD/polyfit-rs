@@ -3,6 +3,7 @@ name = "polyfit-rs"
 version = "0.1.0"
 authors = ["Stefano Di Martino"]
 description = "Polynomial fitting of data like in numpy.polyfit()."
+repository = "https://github.com/StefanoD/polyfit-rs"
 edition = "2018"
 keywords = ["polyfit", "polynomial fitting"]
 license = "Apache-2.0"

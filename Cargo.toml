@@ -2,9 +2,15 @@
 name = "polyfit-rs"
 version = "0.1.0"
 authors = ["Stefano Di Martino"]
+description = "Polynomial fitting of data like in numpy.polyfit()."
 edition = "2018"
+keywords = ["polyfit", "polynomial fitting"]
+license = "Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+test = true
 
 [dependencies]
 nalgebra = "0.20"

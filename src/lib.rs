@@ -2,7 +2,7 @@ extern crate nalgebra as na;
 
 pub mod polyfit_rs {
     
-    type MatrixNN = na::Matrix<f64, na::Dynamic, na::Dynamic, na::VecStorage<f64, na::Dynamic, na::Dynamic>>;
+    type PolyMatrix = na::MatrixMN<f64, na::Dynamic, na::Dynamic>;
 
     /// @param x_values The x-values
     /// @param y_values The y-values
@@ -12,7 +12,7 @@ pub mod polyfit_rs {
     {
         let number_of_columns = polynomial_degree + 1;
         let number_of_rows = x_values.len();
-        let mut a = MatrixNN::zeros(number_of_rows, number_of_columns);
+        let mut a = PolyMatrix::zeros(number_of_rows, number_of_columns);
 
         for row in 0..number_of_rows 
         {

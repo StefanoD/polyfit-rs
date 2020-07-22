@@ -6,7 +6,7 @@ pub mod polyfit_rs {
     /// @param y_values The y-values
     /// @param polynomial_degree The degree of the polynomial. I. e. 2 for a parabola.
     /// @return Degree of monomials increases with the vector index
-    pub fn polyfit<'a, T: na::RealField>(x_values : &'a [T], y_values : &'a [T], polynomial_degree: usize) -> Vec<T>
+    pub fn polyfit<T: na::RealField>(x_values : &[T], y_values : &[T], polynomial_degree: usize) -> Vec<T>
     {
         let number_of_columns = polynomial_degree + 1;
         let number_of_rows = x_values.len();

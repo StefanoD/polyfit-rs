@@ -32,6 +32,3 @@ pub mod polyfit_rs {
         return x.data.into();
     }
 }
-
-
-

@@ -28,7 +28,7 @@ mod tests {
             y_values.push(y);
         }
 
-        let fitted_parameters = poly::polyfit_rs::polyfit(&x_values, &y_values_with_errors, 2);
+        let fitted_parameters = poly::polyfit_rs::polyfit(&x_values, &y_values_with_errors, 2).unwrap();
         
         let mut i = 0;
         for x in x_values

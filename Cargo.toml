@@ -1,6 +1,6 @@
 [package]
 name = "polyfit-rs"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Stefano Di Martino"]
 description = "Polynomial fitting of data like in numpy.polyfit()."
 repository = "https://github.com/StefanoD/polyfit-rs"
@@ -13,7 +13,7 @@ readme = "README.md"
 test = true
 
 [dependencies]
-nalgebra = "0.20"
+nalgebra = "0.31.4"
 
 [dev-dependencies]
 rand = "0.7.3"

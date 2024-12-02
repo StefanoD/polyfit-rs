@@ -22,7 +22,7 @@ mod tests {
         {
             let x = (i as f64) / 10.0;
             let y: f64 = parameters[0] + parameters[1] * x + parameters[2] * x * x;
-            let error: f64 = rng.gen_range(-epsilon, epsilon);
+            let error: f64 = rng.gen_range(-epsilon..epsilon);
             let y_with_error = y + error;
             y_values_with_errors.push(y_with_error);
             x_values.push(x);

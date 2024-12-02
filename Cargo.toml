@@ -13,7 +13,7 @@ readme = "README.md"
 test = true
 
 [dependencies]
-nalgebra = "0.31.4"
+nalgebra = "0.33.2"
 
 [dev-dependencies]
-rand = "0.7.3"
+rand = "0.8.5"
